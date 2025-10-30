@@ -1,0 +1,349 @@
+/* General Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #f8f9fa; /* Light background */
+}
+
+/* Header Styles */
+.site-header {
+    background-color: #ffffff; /* White background for header */
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.site-header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.site-header nav a {
+    color: #0056b3; /* Darker blue for links */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    /* --- START BUTTON ALIGNMENT FIX FOR HEADER --- */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content (if needed, good for padding) */
+    /* --- END BUTTON ALIGNMENT FIX FOR HEADER --- */
+}
+
+.site-header nav a:hover {
+    color: #007bff; /* Primary blue on hover */
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 86, 179, 0.8)), url('assets/img/hero-background.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    position: relative;
+}
+
+.about-hero h1 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section Styling */
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0056b3; /* Darker blue for headings */
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #007bff; /* Primary blue underline */
+    border-radius: 2px;
+}
+
+.bg-light {
+    background-color: #f2f7ff !important; /* Lighter blue tint */
+}
+
+.bg-primary {
+    background-color: #007bff !important; /* Bootstrap primary blue */
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+.text-white-75 {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Image Styling */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.rounded {
+    border-radius: 0.5rem !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+/* About Intro Section */
+.about-intro img {
+    border-radius: 1rem;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.about-intro img:hover {
+    transform: translateY(-10px);
+}
+
+
+/* President Section */
+.president-section h2 {
+    text-align: right; /* Align text right next to image */
+}
+
+.president-section .president-image-wrapper {
+    position: relative;
+    display: inline-block;
+    padding: 10px; /* Space for border effect */
+    background: linear-gradient(45deg, #007bff, #0056b3); /* Gradient border */
+    border-radius: 50%; /* Make wrapper circular */
+    box-shadow: 0 0 0 5px rgba(0, 123, 255, 0.3); /* Outer glow */
+    transition: transform 0.3s ease;
+}
+
+.president-section .president-image-wrapper:hover {
+    transform: scale(1.03);
+}
+
+.president-section .president-img {
+    border-radius: 50%; /* Make image circular */
+    border: 5px solid #fff; /* White inner border */
+    object-fit: cover; /* Ensure image covers the circle */
+    width: 280px; /* Adjust size as needed */
+    height: 280px; /* Adjust size as needed */
+    transition: border-color 0.3s ease;
+}
+
+.president-section .president-image-wrapper:hover .president-img {
+    border-color: #e0f2ff; /* Lighter border on hover */
+}
+
+
+/* Specialization Section */
+.specialization-section img {
+    border-radius: 1rem;
+}
+
+/* Our Promise Section */
+.our-promise-section {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.our-promise-section h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff; /* White underline for dark background */
+}
+
+.our-promise-section .button-white {
+    background-color: #fff;
+    color: #007bff;
+    border: 2px solid #fff;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    /* --- START BUTTON ALIGNMENT FIX FOR OUR PROMISE --- */
+    display: inline-flex; /* Use inline-flex for button, allowing flex properties */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    /* Adjust padding to ensure visual centering */
+    padding: 10px 30px; /* Slightly reduced vertical padding, let flex handle centering */
+    /* --- END BUTTON ALIGNMENT FIX FOR OUR PROMISE --- */
+}
+
+.our-promise-section .button-white:hover {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+
+/* Existing Lindy UI Kit and Bootstrap Overrides/Extensions */
+.button {
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    /* Ensuring base button properties allow for flex centering */
+    display: inline-flex; /* Change from inline-block to inline-flex */
+    align-items: center; /* Align text vertically in the middle */
+    justify-content: center; /* Align text horizontally in the middle */
+}
+
+.button-lg {
+    padding: 12px 30px; /* Keep original padding, flex will help distribute */
+    font-size: 1rem;
+}
+
+.radius-50 {
+    border-radius: 50px !important;
+}
+
+/* Footer Styles (as provided, ensure it matches site theme) */
+.footer-style-4 {
+    background-color: #002e60; /* Darker blue for footer */
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.footer-style-4 .footer-widget h6 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.footer-style-4 .footer-widget .links li a {
+    color: #a7d0ff; /* Lighter blue for footer links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-style-4 .footer-widget .links li a:hover {
+    color: #fff;
+}
+
+.footer-style-4 .socials li a {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.footer-style-4 .socials li a:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.footer-style-4 .download-app li a {
+    background-color: #0056b3;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.footer-style-4 .download-app li a:hover {
+    background-color: #007bff;
+}
+
+.footer-style-4 .copyright-wrapper {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 40px;
+    text-align: center;
+    color: #a7d0ff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .site-header .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .site-header nav {
+        margin-top: 15px;
+    }
+    .about-intro .row,
+    .president-section .row,
+    .specialization-section .row {
+        flex-direction: column;
+    }
+    .president-section .order-lg-1 { order: 1; }
+    .president-section .order-lg-2 { order: 2; }
+    .president-section h2 {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .about-intro .col-lg-5,
+    .president-section .col-lg-5,
+    .specialization-section .col-lg-5 {
+        margin-bottom: 30px;
+    }
+    section h2 {
+        text-align: center;
+    }
+    section h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        padding: 80px 0 50px;
+    }
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section p {
+        font-size: 1rem;
+    }
+    section {
+        padding: 50px 0;
+    }
+    section h2 {
+        font-size: 2rem;
+    }
+    .footer-style-4 .footer-widget {
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>GASI</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/png" href="assets/img/logo/12.png">
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css"/>
+    <link rel="stylesheet" href="assets/css/tiny-slider.css"/>
+    <link rel="stylesheet" href="assets/css/animate.css"/>
+    <link rel="stylesheet" href="assets/css/lindy-uikit.css"/>
+    
+    <!-- Custom Slideshow CSS -->
+    <style>
+        .slideshow-container {
+            border: 10px solid #007bff; /* Attractive blue frame */
+            padding: 5px; /* Space between frame and image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+            position: relative;
+            width: 736px; /* Fixed width */
+            height: 450px; /* Fixed height */
+            overflow: hidden; /* Hide parts of images that might exceed */
+            margin: auto; /* Center the slideshow if its parent allows */
+            /* Add this if you want to align it more precisely within the hero section */
+            /* For example, if it's placed in a flex container or grid */
+        }
+        .slideshow-container img {
+            width: 100%;
+            height: 100%;
+            display: none; /* Hide all images by default */
+            object-fit: contain; /* Ensures the image fits within the container without cropping, maintaining aspect ratio */
+            background-color: #ffffff; /* Optional: white background for images that don't fill the frame */
+        }
+        .slideshow-container img.active {
+            display: block; /* Show only the active image */
+        }
+
+        /* Adjustments for the hero section to better accommodate the slideshow */
+        .hero-section.hero-style-5 .hero-image {
+            display: flex; /* Use flexbox to center content */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100%; /* Ensure it takes full height of its parent */
+        }
+    </style>
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- ========================= preloader start ========================= -->
+    <div class="preloader">
+      <div class="loader">
+        <div class="spinner">
+          <div class="spinner-container">
+            <div class="spinner-rotator">
+              <div class="spinner-left">
+                <div class="spinner-circle"></div>
+              </div>
+              <div class="spinner-right">
+                <div class="spinner-circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================= preloader end ========================= -->
+
+    <!-- ========================= hero-section-wrapper-5 start ========================= -->
+    <section id="home" class="hero-section-wrapper-5">
+
+      <!-- ========================= header-6 start ========================= -->
+      <header class="header header-6">
+        <div class="navbar-area">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg">
+                  <a class="navbar-brand" href="index.html">
+                  <img src="assets/img/logo/10.png" alt="Logo" style="width:80px; height:auto; margin-right:20px;" />
+				  <img src="assets/img/logo/11.png" alt="Logo" style="width:500px; height:auto;" />
+
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent6" aria-controls="navbarSupportedContent6" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                  </button>
+  
+                  <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent6">
+                    <ul id="nav6" class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="page-scroll active" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+					  <a class="page-scroll" href="#feature">Services</a>
+						
+                      </li>
+                      <li class="nav-item">
+						<a class="page-scroll" href="#about">About</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="page-scroll" href="#pricing">FAQs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="page-scroll" href="#contact">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  
+                  <!-- navbar collapse -->
+                </nav>
+                <!-- navbar -->
+              </div>
+            </div>
+            <!-- row -->
+          </div>
+          <!-- container -->
+        </div>
+        <!-- navbar area -->
+      </header>
+      <!-- ========================= header-6 end ========================= -->
+
+      <!-- ========================= hero-5 start ========================= -->
+      <div class="hero-section hero-style-5 img-bg" style="background-image: url('assets/img/hero/hero-5/hero-bg.png')">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="hero-content-wrapper">
+				<h6><span style="font-size: 20px;">Welcome to,</span></h6></br>
+                <h3 class="mb-30 wow fadeInUp" data-wow-delay=".2s"><span style="color: #007BFF; font-size: 40px;">G U G A N</span> </br>ACCOUNTING SERVICES INC.</h3></br>
+                <p class="mb-30 wow fadeInUp" data-wow-delay=".4s"><span style="font-size: 20px;">Feeling Drained by Debits & Credits in the GTA? </br>Your Toronto Financial Peace Starts Here.</span></p></br>
+                <a href="https://wa.me/14164345668" class="button button-lg radius-50 wow fadeInUp" data-wow-delay=".6s">Chat with an Expert <i class="lni lni-chevron-right"></i> </a>
+              </div>
+            </div>
+            <div class="col-lg-6 align-self-end">
+              <div class="hero-image wow fadeInUp" data-wow-delay=".5s">
+                <!-- Slideshow Container -->
+                <div class="slideshow-container">
+                    <img src="1.png" alt="Image 1">
+                    <img src="2.png" alt="Image 2">
+                    <img src="3.png" alt="Image 3">
+                    <img src="4.png" alt="Image 4">
+                    <img src="5.png" alt="Image 5">
+                    <img src="6.png" alt="Image 6">
+                    <img src="7.png" alt="Image 7">
+                    <img src="8.png" alt="Image 8">
+                    <img src="9.png" alt="Image 9">
+                    <img src="10.png" alt="Image 10">
+                    <img src="11.png" alt="Image 11">
+                    <img src="12.png" alt="Image 12">
+                    <img src="13.png" alt="Image 13">
+                    <img src="14.png" alt="Image 14">
+                    <img src="15.png" alt="Image 15">
+                </div>
+                <!-- End Slideshow Container -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ========================= hero-5 end ========================= -->
+
+    </section>
+    <!-- ========================= hero-section-wrapper-6 end ========================= -->
+	
+	<!-- ========================= feature style-5 start ========================= -->
+    <section id="feature" class="feature-section feature-style-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xxl-10 col-xl-10 col-lg-11 col-md-11">
+            <div class="section-title text-center mb-60">
+			</br>
+              <h4 class="mb-15 wow fadeInUp" data-wow-delay=".2s">Unlock Your Financial Potential: Expertise That Truly Counts.</h4>
+              <p class="wow fadeInUp" data-wow-delay=".4s" style="max-width: 100%; width: 100%;">At Gugan Accounting Services Inc., we provide more than just numbers – we deliver clarity, confidence, and peace of mind. Partner with us to streamline your finances, optimize your growth, and navigate the Canadian financial landscape with ease.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
+              <div class="icon">
+                <i class="lni lni-calculator"></i>
+                <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z" fill="#EBF4FF"/>
+                  </svg>                  
+              </div>
+              <div class="content">
+                <h5>Strategic Accounting Solutions</h5>
+                <p>Beyond just crunching numbers, we offer insightful analysis and robust financial reporting to guide your business decisions and fuel sustainable growth.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
+              <div class="icon">
+                <i class="lni lni-licencse"></i>
+                <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z" fill="#EBF4FF"/>
+                  </svg> 
+              </div>
+              <div class="content">
+                <h5>Effortless Payroll, Every Payday</h5>
+                <p>Ensure your team is paid accurately and on time, every time, with our comprehensive payroll management, freeing you from administrative burdens and compliance worries.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
+              <div class="icon">
+                <i class="lni lni-book"></i>
+                <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z" fill="#EBF4FF"/>
+                  </svg> 
+              </div>
+              <div class="content">
+                <h5>Crystal-Clear Books, Confident Decisions</h5>
+                <p>From daily transactions to monthly reconciliations, our meticulous bookkeeping services keep your financial records organized, accurate, and ready when you are.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
+              <div class="icon">
+                <i class="lni lni-coin"></i>
+                <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z" fill="#EBF4FF"/>
+                  </svg> 
+              </div>
+              <div class="content">
+                <h5>Navigate Taxes with Confidence</h5>
+                <p style="text-align: justify;"><b>a) Personal (T1):</b> Expert T1 preparation to maximize your returns and minimize your tax-day stress.</br> <b>b) Corporate Tax:</b> Strategic filing and preparation to optimize your corporate tax position and boost financial health. </br><b>c) HST Filing:</b> Precise HST compliance to keep your business in good standing and free from costly errors.</p>
+				
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
+              <div class="icon">
+                <i class="lni lni-apartment"></i>
+                <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z" fill="#EBF4FF"/>
+                  </svg> 
+              </div>
+              <div class="content">
+                <h5>Your Business Journey Starts Here</h5>
+                <p>From initial setup to navigating legal requirements, we guide you through seamless business registration, getting your venture off to the right start in Toronto.</p>
+				</br></br></br></br>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
+              <div class="icon">
+                <i class="lni lni-handshake"></i>
+                <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z" fill="#EBF4FF"/>
+                  </svg> 
+              </div>
+              <div class="content">
+                <h5>Seamless WSIB Compliance</h5>
+                <p>Stay compliant and protect your business with our accurate and timely WSIB reporting services, ensuring peace of mind and proper coverage.</p>
+				</br></br></br></br></br>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ========================= feature style-5 end ========================= -->
+	
+	
+	<!-- ========================= about style-4 start ========================= -->
+    <section id="about" class="about-section about-style-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-5 col-lg-6">
+            <div class="about-content-wrapper">
+              <div class="section-title mb-30"></br>
+                <h6 class="mb-25 wow fadeInUp" data-wow-delay=".2s">About Gugan Accounting Services Inc.</br> Your Trusted Partner in Financial Clarity and Growth.</h6>
+                <p class="wow fadeInUp" data-wow-delay=".3s" style="text-align: justify;">Welcome to Gugan Accounting Services Inc., where we believe that clear finances pave the way for extraordinary success. Founded with a commitment to precision, integrity, and personalized service, we've become a trusted name for individuals and businesses across the Greater Toronto Area. We're dedicated to transforming complex financial landscapes into clear, actionable pathways, empowering our clients to achieve their goals with confidence.</p>
+              </div>
+			  <div class="section-title mb-30">
+                <h6 class="mb-25 wow fadeInUp" data-wow-delay=".2s">Meet Our President: <span style="color: #007BFF;">Sivasithamparam Kugan</span></h6>
+                <p class="wow fadeInUp" data-wow-delay=".3s" style="text-align: justify;">As the President of Gugan Accounting Services Inc., Sivasithamparam Kugan brings a wealth of knowledge and a passion for financial excellence to every client relationship. With a strong academic foundation in B.Com and a Diploma in Accounting, Kugan has successfully steered Gugan Accounting for several years, building a reputation for reliability and insightful financial guidance within the vibrant Toronto business community.</p>
+              </div>
+              
+              <a href="about.html" class="button button-lg radius-10 wow fadeInUp" data-wow-delay=".5s">Learn More</a>
+            </div>
+          </div>
+		<div class="col-xl-6 col-lg-5">
+			<div class="about-image text-lg-right wow fadeInUp" data-wow-delay=".5s">
+				<img src="assets/img/about/about-4/about-img.svg" alt="">
+			</div>
+		</div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ========================= about style-4 end ========================= -->
+
+    
+
+    
+
+    <!-- ========================= pricing style-4 start ========================= -->
+    <section id="pricing" class="pricing-section pricing-style-4 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-4 col-lg-5">
+            <div class="section-title mb-60">
+              <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">Your Financial Questions, Answered</h3>
+              <p class="wow fadeInUp" data-wow-delay=".4s" style="text-align: justify;">We understand you have questions about your finances and business operations. Explore our frequently asked questions to find the trusted guidance and support you need from your Toronto accounting partners. <b>For more questions,</b></p>
+			  </br>
+			  <a href="#contact" class="button radius-30"  style="margin-right: 20px;">Contact Us</a> <a href="faq.html" class="button radius-30">Learn More</a>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-7">
+            <div class="pricing-active-wrapper wow fadeInUp" data-wow-delay=".4s">
+              <div class="pricing-active">
+                <div class="single-pricing-wrapper">
+                  <div class="single-pricing">
+                    
+                    <h4 style="text-align: left;">1. Why should I hire an accountant when I can use software or do my own bookkeeping?</h4>
+                    
+                    
+                    <p style="text-align: justify;">While accounting software is a great tool, it's just that – a tool. At Gugan Accounting, we provide the <b>expert insight and strategic guidance</b> that software can't. We don't just process numbers; we analyze your financial.............</p>
+                      
+                    </br>
+                    <a href="faq.html#faq1" class="button radius-30" style="background-color: #add8e6; color: #000;">Continue Reading</a>
+                  </div>
+                </div>
+                <div class="single-pricing-wrapper">
+                  <div class="single-pricing">
+                    
+                    <h4 style="text-align: left;">2. I'm a small business in Toronto. Do I really need professional payroll management?</h4>
+                    
+                    
+                    <p style="text-align: justify;">Absolutely. Payroll is one of the most critical and complex aspects of running a business, even a small one. It involves more than just paying employees; you need to manage deductions, remittances to CRA, T4s, Records of...........</p>
+                      
+                    </br>
+                    <a href="faq.html#faq2" class="button radius-30" style="background-color: #add8e6; color: #000;">Continue Reading</a>
+                  </div>
+                </div>
+                <div class="single-pricing-wrapper">
+                  <div class="single-pricing">
+                    
+                    <h4 style="text-align: left;">3. How can Gugan Accounting help me save money on my personal (T1) or corporate taxes?</h4>
+                    
+                    
+                    <p style="text-align: justify;">Our approach goes beyond just filling out forms. For Personal (T1) taxes, we meticulously identify every eligible deduction and credit you might qualify for, often uncovering savings...........</p>
+                      
+                    </br>
+                    <a href="faq.html#faq3" class="button radius-30" style="background-color: #add8e6; color: #000;">Continue Reading</a>
+                  </div>
+                </div>
+				<div class="single-pricing-wrapper">
+                  <div class="single-pricing">
+                    
+                    <h4 style="text-align: left;">4. I'm new to business in Toronto. Can you help me with business registration?</h4>
+                    
+                    
+                    <p style="text-align: justify;">Yes, absolutely! Navigating the initial steps of business registration can be complex, involving provincial (Ontario) and federal requirements. We provide comprehensive guidance through the entire process, helping...........</p>
+                      
+                    </br>
+                    <a href="faq.html#faq4" class="button radius-30" style="background-color: #add8e6; color: #000;">Continue Reading</a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================= pricing style-4 end ========================= -->
+
+    <!-- ========================= contact-style-3 start ========================= -->
+    <section id="contact" class="contact-section contact-style-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xxl-7 col-xl-7 col-lg-9 col-md-12">
+            <div class="section-title text-center mb-50">
+			</br>
+              <h3 class="mb-15">Let's Connect & Grow Together</h3>
+              <p>Ready to simplify your finances, optimize your business, or just have a chat about your accounting needs? Reach out to Gugan Accounting Services Inc. today – we're here to help you thrive.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="contact-form-wrapper">
+              <form action="" method="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <input type="text" id="name" name="name" class="form-input" placeholder="Name">
+                      <i class="lni lni-user"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <input type="email" id="email" name="email" class="form-input" placeholder="Email">
+                      <i class="lni lni-envelope"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <input type="text" id="number" name="number" class="form-input" placeholder="Number">
+                      <i class="lni lni-phone"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <input type="text" id="subject" name="subject" class="form-input" placeholder="Subject">
+                      <i class="lni lni-text-format"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="single-input">
+                      <textarea name="message" id="message" class="form-input" placeholder="Message" rows="6"></textarea>
+                      <i class="lni lni-comments-alt"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-button">
+                      <button type="submit" class="button"> <i class="lni lni-telegram-original"></i> Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4">
+            <div class="left-wrapper">
+              <div class="row">
+                <div class="col-lg-12 col-md-6">
+                  <div class="single-item">
+                    <div class="icon">
+                      <i class="lni lni-phone"></i>
+                    </div>
+                    <div class="text">
+                      
+                      <p>+14164345668</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-6">
+                  <div class="single-item">
+                    <div class="icon">
+                      <i class="lni lni-envelope"></i>
+                    </div>
+                    <div class="text">
+                      <p> guganaccounting@yahoo.com</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-6">
+                  <div class="single-item">
+                    <div class="icon">
+                      <i class="lni lni-map-marker"></i>
+                    </div>
+                    <div class="text">
+                      <p>709-10 Tuxedo Court, Scarborough, Ontario, M1G3S4, Canada.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================= contact-style-3 end ========================= -->
+
+    
+	<!-- ========================= clients-logo start ========================= -->
+    <section class="clients-logo-section pt-100 pb-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="client-logo wow fadeInUp" data-wow-delay=".2s">
+				<h4>Integrated Highlight</h4></br>
+				<p><b>Did you know? We're the trusted financial partner for numerous dental clinics across Toronto!</b></p>
+				
+              <!--<img src="assets/img/clients/brands.svg" alt="" class="w-100">-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================= clients-logo end ========================= --> 
+
+    <!-- ========================= footer style-4 start ========================= -->
+    <footer class="footer footer-style-4">
+      <div class="container">
+        <div class="widget-wrapper">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="footer-widget wow fadeInUp" data-wow-delay=".2s">
+                <div class="logo">
+                  <a href="#0"> <img src="assets/img/logo/10.png" alt="" style="width:200px; height:auto; margin-right:20px;"> </a>
+                </div>
+                <p class="desc"><b>"We organize your numbers so you can clearly see your future."</b></p>
+                <ul class="socials">
+                  <li> <a href="#0"> <i class="lni lni-facebook-filled"></i> </a> </li>
+                  <li> <a href="#0"> <i class="lni lni-twitter-filled"></i> </a> </li>
+                  <li> <a href="#0"> <i class="lni lni-instagram-filled"></i> </a> </li>
+                  <li> <a href="#0"> <i class="lni lni-linkedin-original"></i> </a> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6 col-sm-6">
+              <div class="footer-widget wow fadeInUp" data-wow-delay=".3s">
+                <h6>Quick Link</h6>
+                <ul class="links">
+                  <li> <a href="#home">Home</a> </li>
+                  <li> <a href="#feature">Service</a> </li>
+                  <li> <a href="#about">About</a> </li>
+                  <li> <a href="#pricing">FAQs</a> </li>
+                  <li> <a href="#contact">Contact</a> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div class="footer-widget wow fadeInUp" data-wow-delay=".4s">
+                <h6>Services</h6>
+                <ul class="links">
+                  <li> <a href="#0">1. Accounting</a> </li>
+                  <li> <a href="#0">2. Payroll Management</a> </li>
+                  <li> <a href="#0">3. Bookkeeping</a> </li>
+                  <li> <a href="#0">4. Taxation</a> </li>
+				  <li> <a href="#0">5. Business Registration</a> </li>
+				  <li> <a href="#0">6. WSIB Reporting</a> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div class="footer-widget wow fadeInUp" data-wow-delay=".5s">
+                <h6>Contact Through</h6>
+                <ul class="download-app">
+                  <li>
+                    <a href="https://wa.me/14164345668">
+						
+                      <span class="icon"><i class="lni lni-whatsapp"></i></span>
+                      <span class="text"><b>WhatsApp</b> </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:guganaccounting@yahoo.com">
+                      <span class="icon"><i class="lni lni-envelope"></i></i></span>
+                      <span class="text"><b>Mail</b> </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-wrapper wow fadeInUp" data-wow-delay=".2s">
+          <p> &copy; 2025 Gugan Accounting Services Inc. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- ========================= footer style-4 end ========================= -->
+
+    <!-- ========================= scroll-top start ========================= -->
+    <a href="#" class="scroll-top"> <i class="lni lni-chevron-up"></i> </a>
+    <!-- ========================= scroll-top end ========================= -->
+		
+
+    <!-- ========================= JS here ========================= -->
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap-5.0.0-beta1.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Custom Slideshow JavaScript -->
+    <script>
+        const images = document.querySelectorAll('.slideshow-container img');
+        let currentImageIndex = 0;
+        const intervalTime = 2500; // 2.5 seconds
+
+        function showNextImage() {
+            // Hide the current image
+            if (images[currentImageIndex]) {
+                images[currentImageIndex].classList.remove('active');
+            }
+
+            // Move to the next image, loop back to the start if at the end
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+
+            // Show the new current image
+            images[currentImageIndex].classList.add('active');
+        }
+
+        // Initialize by showing the first image
+        if (images.length > 0) {
+            images[currentImageIndex].classList.add('active');
+        }
+
+        // Start the slideshow
+        setInterval(showNextImage, intervalTime);
+    </script>
+  </body>
+</html>
